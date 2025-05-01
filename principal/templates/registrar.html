@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='registrar.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>PÁGINA DE REGISTRO</h1>
+    </div>
+    <form action="/registrar" method="post">    
+            {% if error %}
+                <span class="error">{{ error }}</span>
+            {% endif %}
+        <div class="c_2">     
+            <input type="text" name="usuario" placeholder="Usuario" required class="input"></input>
+        </div>
+        <div class="c_2">
+            <input type="email" name="email" placeholder="Email" required class="input"></input>
+        </div>
+        <div class="caixa_input">
+            <input type="password" name="senha" placeholder="Senha" required class="input"></input>
+        </div>
+        <div class="btn_registrar">
+            <a href="/logar">
+                <button type="submit" class="btn_click">Registrar</button>
+            </a>
+        </div>
+        <div class ="con_logar">
+            <a>Já tem uma conta? <a href="/logar" class ="link_logar">&nbsp;Logar</a></a>
+        </div>
+    </form>
+</body>
+</html>

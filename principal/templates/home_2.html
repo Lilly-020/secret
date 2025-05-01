@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home_2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_2.css') }}">
+</head>
+<body>
+    <a href="/add_text" class="btn_registrar">
+        <button type="submit" class="btn_click">+</button>
+    </a>
+    {% for post in posts %}
+        <div class="post">
+            <p class="oi"><strong>{{ post.usuario.usuario }}</strong> escreveu:</p>
+            <h2 class="oi">{{ post.titulo }}</h2>
+            <p class="oi">{{ post.texto }}</p>
+            <hr class="oi">
+        </div>
+    {% else %}
+        <p class="texto">Para visualizar os posts, adicione algo...</p>
+    {% endfor %}
+</body>
+</html>

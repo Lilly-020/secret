@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <div class="con_title">
+        <h1>BEM-VINDO AO SECREAT</h1>    
+    </div>
+    <div class="con_text">
+       <p>Aqui você pode ser quem quiser, conte suas histórias 
+        sem ser julgado, faça do secreat sua casa!!!</p>  
+    </div>
+    <div class="container_geral">
+        <div class="conteiner">    
+            <a href="/logar">
+                <button type="submit" class="btn_logar">Logar</button>    
+            </a>
+        </div>
+        <div class="con_link">
+            <p>Não tem cadastro? <a href="/registrar" class="link_cadastrar">Cadastrar</a></p>
+        </div>  
+
+    </div>
+</body>
+</html>

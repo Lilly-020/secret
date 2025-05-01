@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add_text</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='add_text.css') }}">
+</head>
+<body>
+    <form action="add_text" method="post">
+        <div>
+           <input type="text" name="titulo" placeholder="Title" required> 
+        </div>
+        <div class="input_text">
+            <input type="text" name="texto" placeholder="Text" required>
+        </div>
+        <div class="btn_registrar">
+            <a href="/home_2" ><button type="submit" class="btn_click">add</button>
+        </div>   
+    </form>
+</body>
+</html>

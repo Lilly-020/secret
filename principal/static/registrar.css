@@ -1,0 +1,133 @@
+/* CSS Document Register_Page */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Comic+Relief:wght@400;700&display=swap');
+
+body {
+    background-image: url("cat.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+:root{
+    --font_comic: "Comic Relief", system-ui;
+}
+.error{
+    color: #ffefff;
+    text-shadow: 0px 0px 5px #ffefff;
+    padding-bottom: 10px;
+}
+.container{
+    position: absolute;
+    color: #ffefff;
+    font-size: 30px;
+    top: 20px;
+    overflow: break-word;
+    text-align: center;
+    text-shadow: 0px 0px 5px #ffefff;
+}
+form {
+    background-color: rgba(134, 38, 175, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 310px;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 5px 0px 40px #6b146b;
+}
+.caixa_input {
+    padding-bottom: 20px;
+}
+.c_2{
+    padding-bottom: 10px;
+}
+.input:focus {
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+}
+.input {
+    cursor: text;
+    font-family: var(--font_comic);
+    background-color: rgb( 255, 239, 255, 0.7);
+    width: 250px;
+    height: 40px;
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    font-size: 18px;
+    color: #452864;
+    padding-left: 20px;
+}
+.input:hover {
+    background-color: rgb( 255, 239, 255);
+    box-shadow: 0px 0px 10px #ffefff;
+    transition: 0.3s;
+}
+.btn_registrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px; ;
+}
+.btn_click{
+    font-family: var(--font_comic);
+    background-color: rgb( 255, 239, 255, 0.7);
+    width: 180px;
+    height: 50px;
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    font-size: 25px;
+    color: #452864;
+}
+.btn_click:hover{
+    background-color: rgb( 255, 239, 255);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #ffefff;
+    transition: 0.3s;
+}
+.con_logar{
+    font-family: var(--font_comic);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #491f49;  
+    font-size: 13px;
+    padding-top: 10px;
+}
+.link_logar {
+    color: #ffefff;
+}
+.link_logar:hover{
+    color: #891b89;
+}
+
+@media screen and (max-width: 400px) {
+    .container{
+        font-size: 20px;
+    }
+    form {
+        width: 250px;
+        height: 300px;
+    }
+    .input {
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .btn_click {
+        width: 150px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .con_logar{
+        font-size: 12px;
+    }
+}
